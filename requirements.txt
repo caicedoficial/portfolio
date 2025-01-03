@@ -1,6 +1,5 @@
 django
 django-compressor
-django-browser-reload
 tailwindcss
 whitenoise
 Pillow
