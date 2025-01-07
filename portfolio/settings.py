@@ -1,13 +1,17 @@
-
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-2ye&_9@aev(f(8r&f$$e!o(*ycqi02b+-&r&utixj7a6(iyzws"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
-ALLOWED_HOSTS = [ '.vercel.app', 'localhost', 'alexandercaicedo.pro', 'www.alexandercaicedo.pro', '127.0.0.1' ]
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = [".vercel.app, localhost, alexandercaicedo.pro, www.alexandercaicedo.pro, 127.0.0.1"]
 
 INSTALLED_APPS = [
     "django.contrib.auth",
