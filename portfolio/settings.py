@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'localhost', 'alexandercaicedo.pro', 'www.alexandercaicedo.pro', '127.0.0.1' ]
+ALLOWED_HOSTS = [ 'localhost', 'alexandercaicedo.pro', 'www.alexandercaicedo.pro', '127.0.0.1', 'portfolio-k3di5v5mp-alexander-caicedo-projects.vercel.app' ]
 
 INSTALLED_APPS = [
     "django.contrib.auth",
